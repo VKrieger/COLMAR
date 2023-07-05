@@ -1,6 +1,24 @@
 body{
     margin: auto;
     color: rgb(74, 74, 74);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
 }
 
 header {
@@ -16,12 +34,15 @@ header {
 
 .logo{
     display: flex;
-    font-size: 32px;
     align-items: center;
 }
 
 .logo p span {
     color: rgb(155, 155, 155);
+}
+
+.logo p {
+    font-size: 32px;
 }
 
 .logo img {
@@ -34,6 +55,7 @@ nav a{
     padding-right: 16px;
     text-decoration: none;
     color: black;
+
 }
 
 nav a:last-child{
@@ -42,21 +64,23 @@ nav a:last-child{
 
 
 .hero {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
     padding: 32px 24px;
     background-color: rgb(216, 216, 216);
     align-items: center;
-    font-size: 32px;
-}
-
-.hero img {
-    margin-right: 24px;
-    width: 60%;
+    margin-bottom: 2px;
 }
 
 .hero p {
-    font-size: 3rem;
+    font-size: 24px;
 }
+
+.main-Images {
+    width: 100%;
+}
+
 
 .hero button {
     padding: 8px auto;
@@ -70,4 +94,69 @@ nav a:last-child{
 
 .headline {
     padding-right: 8rem;
+}
+
+
+.information {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+}
+
+.introduction {
+    padding: 32px 0px 32px 24px;
+}
+
+
+
+.newsfeed {
+    border-left: 1px solid;
+    border-color:rgb(216, 216, 216);
+    padding: 32px 0px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1.45fr;
+    gap: 16px;
+}
+
+.info:first-child{
+    border-bottom: 1px solid;
+    border-color: rgb(216, 216, 216);
+}
+
+.info:not(:first-child, :last-child){
+    margin-top: 2px;
+    padding-top: 16px;
+    border-top: 1px solid;
+    border-color: rgb(216, 216, 216);
+}
+
+.info:last-child {
+    padding-top: 16px;
+    background-color: rgb(216, 216, 216);
+}
+
+.info img {
+    height: auto;
+    padding: 0px 16px 16px 16px;
+    width: 100%;
+}
+
+.description {
+    margin: auto 19px;
+}
+
+
+
+.description p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.info a {
+    text-decoration: none;
+    color: rgb(93, 146, 220);
 }
