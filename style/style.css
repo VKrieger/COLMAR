@@ -1,214 +1,294 @@
-body{
-    margin: auto;
-    color: rgb(74, 74, 74);
-    line-height: 1.5;
+body {
+  margin: auto;
+  color: rgb(74, 74, 74);
+  line-height: 1.5;
+}
+
+.mobile {
+    display: none;
 }
 
 h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 24px;
+  font-size: 30px;
+  margin-bottom: 24px;
+  font-weight: 600;
 }
 
 h3 {
-    font-size: 22px;
+  font-weight: 600;
+  font-size: 22px;
 }
 
 p {
-    font-size: 16px;
+    font-weight: 400;
+  font-size: 16px;
 }
 
 header {
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    height: 64px;
     background-color: white;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
+.desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo p span {
-    color: rgb(155, 155, 155);
+  color: rgb(155, 155, 155);
 }
 
 .logo p {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .logo img {
-    height: 50px;
-    width: auto;
-
+  height: 50px;
+  width: auto;
 }
 
-nav a{
-    padding-right: 16px;
-    text-decoration: none;
-    color: black;
-
+nav a {
+  padding-right: 16px;
+  text-decoration: none;
+  color: black;
 }
 
-nav a:last-child{
-    padding-right: 0;
+nav a:last-child {
+  padding-right: 0;
 }
-
 
 .hero {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 24px;
-    padding: 32px 24px;
-    background-color: rgb(216, 216, 216);
-    align-items: center;
-    margin-bottom: 2px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  padding: 32px 24px;
+  background-color: rgb(216, 216, 216);
+  align-items: center;
+  margin-bottom: 2px;
+  font-weight: 600;
 }
 
 .hero p {
-    font-size: 24px;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .main-Images {
-    width: 100%;
+  width: 100%;
 }
 
-
 .hero button {
-    padding: 8px auto;
-    height: 60px;
-    width: 100%;
-    color: white;
-    background-color: rgb(74, 74, 74);
-    border: 0px;
-
+  padding: 8px auto;
+  height: 60px;
+  width: 100%;
+  color: white;
+  background-color: rgb(74, 74, 74);
+  border: 0px;
 }
 
 .headline {
-    padding-right: 8rem;
+  padding-right: 8rem;
 }
 
-
 .information {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 24px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
 }
 
 .introduction {
-    padding: 32px 0px 32px 24px;
+  padding: 32px 0px 32px 24px;
 }
 
-
-
 .newsfeed {
-    border-left: 1px solid;
-    border-color:rgb(216, 216, 216);
-    padding: 32px 0px;
+  border-left: 1px solid;
+  border-color: rgb(216, 216, 216);
+  padding-top: 16px;
+  padding-bottom: 32px;
 }
 
 .info {
-    display: grid;
-    grid-template-columns: 1fr 1.45fr;
-    gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1.45fr;
+  gap: 16px;
 }
 
-.info:first-child{
-    border-bottom: 1px solid;
-    border-color: rgb(216, 216, 216);
+.info:first-child {
+  border-bottom: 1px solid;
+  border-color: rgb(216, 216, 216);
 }
 
-.info:not(:first-child, :last-child){
-    margin-top: 2px;
-    padding-top: 16px;
-    border-top: 1px solid;
-    border-color: rgb(216, 216, 216);
+.info:not(:first-child, :last-child) {
+  margin-top: 2px;
+  border-top: 1px solid;
+  border-color: rgb(216, 216, 216);
 }
 
 .info:last-child {
-    padding-top: 16px;
-    background-color: rgb(216, 216, 216);
+  background-color: rgb(216, 216, 216);
 }
 
 .info img {
-    height: auto;
-    padding: 0px 16px 16px 16px;
-    width: 100%;
-    margin: auto;
+  height: auto;
+  padding: 16px;
+  width: 100%;
+  margin: auto;
 }
 
 .description {
-    margin: auto 19px;
+  margin: auto 19px;
 }
-
-
 
 .description p {
-    margin-top: 8px;
-    margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-
 .info a {
-    text-decoration: none;
-    color: rgb(93, 146, 220);
+  text-decoration: none;
+  color: rgb(93, 146, 220);
 }
 
 .learning {
-    background-color: rgb(216, 216, 216);
-    padding: 32px  72px;
+  background-color: rgb(216, 216, 216);
+  padding: 0px 72px 32px 72px;
 }
 
-.learning h2 {
-    padding-bottom: 32px;
-    text-align: center;
-    margin: 0;
+.section-headline {
+  padding: 32px;
+  text-align: center;
+  margin: 0;
 }
 
 .courses {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
 }
 
 .categories {
-    background-color: white;
+  background-color: white;
 }
 
 .course-Description {
-    display: inline-block;
-    padding: 16px 16px 24px 16px;
-
+  display: inline-block;
+  padding: 16px 16px 24px 16px;
 }
 
 .course-Description p {
-    margin: 8px 0 0 0;
-    
+  margin: 8px 0 0 0;
 }
-.course-Description h3{
-    margin-top: 0;
+.course-Description h3 {
+  margin-top: 0;
 }
 
 .categories img {
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 
-.thesis {
-    padding: 32px 0px;
+.thesis .newsfeed {
+  border: none;
 }
 
-.thesis h2{
-    text-align: center;
-    padding-bottom: 32px;
-    margin: 0;
+.thesis .info:first-child {
+  background-color: rgb(216, 216, 216);
+}
+
+.thesis .info:last-child {
+  background-color: white;
+  border: none;
+}
+
+.thesis .introduction {
+  padding: 0px 0px 32px 24px;
+}
+
+.thesis .newsfeed {
+  padding-top: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(216, 216, 216);
+  padding: 16px 24px 64px 16px;
+  align-items: start;
+  font-size: 14px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(74, 74, 74);
+}
+
+footer a:first-child{
+    padding-right: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+    nav.mobile {
+        height: 64px;
+        display:    flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    nav.mobile a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .headline {
+        padding: 0px;
+    }
+
+    .information {
+        display: block;
+    }
+
+    .introduction {
+        display: none;
+    }
+
+    .newsfeed {
+        border: none;
+    }
+
+    .info {
+        display: block;
+        border: none;
+    }
+
 }
