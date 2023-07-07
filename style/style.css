@@ -28,6 +28,12 @@ p {
   font-size: 16px;
 }
 
+a:active, a:hover {
+    color: rgb(216, 216, 216)
+}
+
+
+
 header {
   position: sticky;
   top: 0;
@@ -96,7 +102,18 @@ nav a:last-child {
   width: 100%;
   color: white;
   background-color: rgb(74, 74, 74);
-  border: 0px;
+  border: 2px solid rgb(74, 74, 74);
+  border-radius: 3px;
+  transition: 0.2s ease-in;
+}
+
+.hero button:active {
+    background-color: rgb(216, 216, 216);
+}
+
+.hero button:hover {
+    transition: 0.2s ease-out;
+    transform: scale(1.01);
 }
 
 .information {
@@ -122,20 +139,15 @@ nav a:last-child {
   gap: 16px;
 }
 
-.info:first-child {
-  border-bottom: 1px solid;
-  border-color: rgb(216, 216, 216);
+.info {
+    border: solid rgb(216, 216, 216);
+    margin: 1px;
 }
 
-.info:not(:first-child, :last-child) {
-  margin-top: 2px;
-  border-top: 1px solid;
-  border-color: rgb(216, 216, 216);
+.info:hover {
+    background-color: rgb(216, 216, 216);
 }
 
-.info:last-child {
-  background-color: rgb(216, 216, 216);
-}
 
 .info img {
   height: auto;
@@ -158,6 +170,10 @@ nav a:last-child {
   color: rgb(93, 146, 220);
 }
 
+.info a:hover {
+    color: blue;
+}
+
 .learning {
   background-color: rgb(216, 216, 216);
   padding: 0px 72px 32px 72px;
@@ -178,6 +194,14 @@ nav a:last-child {
 
 .categories {
   background-color: white;
+  transition: 0.3s ease-in;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.categories:hover {
+    transition: 0.3s ease-out;
+    transform: scale(1.05);
 }
 
 .course-Description {
@@ -201,14 +225,6 @@ nav a:last-child {
   border: none;
 }
 
-.thesis .info:first-child {
-  background-color: rgb(216, 216, 216);
-}
-
-.thesis .info:last-child {
-  background-color: white;
-  border: none;
-}
 
 .thesis .introduction {
   padding: 0px 0px 32px 24px;
@@ -307,19 +323,6 @@ footer a:first-child {
     border: none;
   }
 
-  .info:last-child {
-    background-color: white;
-  }
-
-  .info:first-child {
-    border-bottom: none;
-  }
-
-  .info:not(:first-child, :last-child) {
-    margin-top: 0;
-    border-top: none;
-  }
-
   .learning {
     padding: 32px 16px;
     background-color: rgb(245, 244, 245);
@@ -337,6 +340,7 @@ footer a:first-child {
     background-color: rgb(216, 216, 216);
     padding: 16px 16px 24px 16px;
     margin:0 0 8px 0;
+    border-radius: 2px;
 
   }
 
