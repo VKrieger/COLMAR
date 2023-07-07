@@ -1,11 +1,11 @@
 body {
-  margin: auto;
+  margin: 0;
   color: rgb(74, 74, 74);
   line-height: 1.5;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 h1 {
@@ -24,24 +24,23 @@ h3 {
 }
 
 p {
-    font-weight: 400;
+  font-weight: 400;
   font-size: 16px;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    background-color: white;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
-.desktop {
+header .desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
   height: 64px;
 }
-
 
 .logo {
   display: flex;
@@ -98,10 +97,6 @@ nav a:last-child {
   color: white;
   background-color: rgb(74, 74, 74);
   border: 0px;
-}
-
-.headline {
-  padding-right: 8rem;
 }
 
 .information {
@@ -238,57 +233,137 @@ footer p {
 }
 
 footer a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+
+footer a:first-child {
+  padding-right: 16px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  header .desktop,.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    height: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  img.mobile {
+    display: inline-block;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  nav.mobile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero {
+    display: block;
+    padding: 0;
+  }
+
+  .hero .headline h1{
+    margin: 0;
+  }
+
+  .hero .headline p {
+    margin-top: 32px;
+  }
+
+  .hero .headline {
+    padding: 32px 16px;
+  }
+
+  .hero button {
+    background-color: rgb(155, 155, 155);
+    font-weight: 500;
+  }
+
+  .information {
+    display: block;
+  }
+
+
+  .newsfeed {
+    border: none;
+    padding-bottom: 16px;
+  }
+
+  .info {
+    padding: 16px;
+    display: block;
+    overflow: hidden;
+    border: none;
+  }
+
+  .info:last-child {
+    background-color: white;
+  }
+
+  .info:first-child {
+    border-bottom: none;
+  }
+
+  .info:not(:first-child, :last-child) {
+    margin-top: 0;
+    border-top: none;
+  }
+
+  .learning {
+    padding: 32px 16px;
+    background-color: rgb(245, 244, 245);
+  }
+
+  .learning h2 {
+    padding-top: 0;
+  }
+
+  div.mobile {
+    display: block;
+  }
+
+  div.mobile h3 {
+    background-color: rgb(216, 216, 216);
+    padding: 16px 16px 24px 16px;
+    margin:0 0 8px 0;
+
+  }
+
+  div.mobile a {
     text-decoration: none;
     color: rgb(74, 74, 74);
-}
+    margin: 0;
+  }
 
-footer a:first-child{
-    padding-right: 16px;
-}
+  .thesis .introduction {
+    padding: 0;
+  }
 
-@media only screen and (max-width: 480px) {
-    .desktop {
-        display: none;
-    }
-    nav.mobile {
-        height: 64px;
-        display:    flex;
-        justify-content: space-around;
-        align-items: center;
+  .thesis .section-headline {
+    padding-bottom: 16px;
+  }
+  .thesis {
+    margin-bottom: 24px;
+  }
 
-    }
+  footer {
+    padding: 0;
+    border: none;
+  }
 
-    nav.mobile a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-
-    }
-
-    .hero {
-        display: block;
-    }
-
-    .headline {
-        padding: 0px;
-    }
-
-    .information {
-        display: block;
-    }
-
-    .introduction {
-        display: none;
-    }
-
-    .newsfeed {
-        border: none;
-    }
-
-    .info {
-        display: block;
-        border: none;
-    }
+  footer p {
+    padding: 16px;
+  }
 
 }
